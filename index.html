@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>MITOVOSOA Roméo | Portfolio</title>
   <style>
     body {
@@ -44,74 +43,122 @@
     ul {
       padding-left: 1.2rem;
     }
-  </style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      line-height: 1.6;
+    }
+  button {
+    background-color: #1c3f60;
+    color: white;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #2a5d80;
+  }
+  .lang-toggle {
+    text-align: right;
+    margin-bottom: 1rem;
+  }  </style>
+
 </head>
 <body>
-  <header>
+
+  <!-- Boutons de langue -->
+  <div class="lang-toggle">
+    <button onclick="switchLang('fr')">🇫🇷 Passer en français</button>
+    <button onclick="switchLang('en')">🇬🇧 Switch to English</button>
+  </div>
+
+  <!-- SECTION FRANÇAISE -->
+  <div id="fr" style="display: none;">
     <h1>MITOVOSOA Roméo</h1>
-    <p>Specialist GIS & Environment | Geophysicist</p>
-  </header>
+    <p>Spécialiste SIG & Environnement | Géophysicien</p>
 
-  <section>
-    <h2>About me</h2>
+    <h2>Qui suis-je ?</h2>
     <p>
-      Passionate about the environment and GIS, I hold a degree in geophysics and mineral engineering and completed a thesis on the impact of climate change on water resources in the Ikopa basin. I am proficient in ArcGIS, QGIS, Python, and modeling tools like SWAT+.
+      Passionné par les sciences de la Terre, l’environnement et les outils numériques, je combine mes compétences en géophysique, en télédétection et en SIG pour proposer des solutions durables et innovantes.
     </p>
-  </section>
 
-  <section>
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Land Use Mapping with Sentinel-2 and Landsat 8 OLI</h3>
-      <p>Supervised classification of Sentinel-2 images to detect changes between 2010 and 2020.</p>
-      <p><strong>Tools :</strong> GEE, QGIS, ArcGIS, Python</p>
-    </div>
-    <div class="project">
-      <h3>Climate study of the Ikopa watershed</h3>
-      <p>Analysis of the impact of climate change on water resources using historical data and climate projections.</p>
-      <p><strong>Tools :</strong> SWAT+, ArcGIS, Excel</p>
-    </div>
-    <div class="project">
-      <h3>Analysis of simulated daily and monthly discharges</h3>
-      <p>Automated processing of SWAT+ outputs for hydrological calibration using Python.</p>
-      <p><strong>Tools :</strong> Python, Pandas, Matplotlib, Scipy</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Skills</h2>
+    <h2>Services proposés</h2>
     <ul>
-      <li>Geographic Information System (QGIS, ArcGIS)</li>
-      <li>Hydrological modeling (SWAT+)</li>
-      <li>Satellite image processing (ENVI, GEE)</li>
-      <li>Environmental data analysis (Python, Excel, R)</li>
-      <li>Languages : French (fluent), English (fluent)</li>
+      <li>Analyse et visualisation de données spatiales (QGIS, ArcGIS, Google Earth Engine)</li>
+      <li>Automatisation de processus avec Python (extraction, traitement, cartographie, rapport)</li>
+      <li>Études environnementales : évaluation d’impact, modélisation hydrologique (SWAT+)</li>
+      <li>Cartographie interactive (Leaflet, Python Folium)</li>
+      <li>Création de dashboards de suivi environnemental</li>
     </ul>
-  </section>
 
-  <section>
-    <h2>Formation</h2>
+    <h2>Projets récents</h2>
     <ul>
-      <li>PhD in Mineral Engineering, Engineering and Geosciences, University of Antananarivo</li>
-      <li>Master in Geophysics, Institute and Observatory of Geophysics of Antananarivo, University of Antananarivo</li>
-      <li>Bachelor's Degree in Physics, Faculty of Sciences, University of Antananarivo</li>
+      <li>Simulation de l’impact du changement climatique sur le bassin versant supérieur de l’Ikopa</li>
+      <li>Analyse des débits mensuels simulés pour les barrages de Madagascar (Python + Excel automatisé)</li>
+      <li>Cartographie de la biodiversité dans la région de l’Androy</li>
     </ul>
-  </section>
 
-  <section>
-    <h2>Experience</h2>
+    <h2>Pourquoi me choisir ?</h2>
     <ul>
-      <li>Thesis on climate change and hydrology – Ikopa Basin</li>
-      <li>GIS and remote sensing mapping projects – various environmental contexts in Madagascar</li>
-      <li>Development of Python scripts for hydrological analysis</li>
-      <li>Geophysical prospecting for mineral exploration and exploitation, geotechnical, environmental, and water resources in Madagascar.</li>
+      <li>Solide bagage scientifique et technique</li>
+      <li>Capacité à transformer des données complexes en résultats clairs et exploitables</li>
+      <li>Expérience dans des projets multi-échelles (local, régional, national)</li>
+      <li>Polyvalent, rigoureux et orienté solution</li>
     </ul>
-  </section>
 
-  <footer>
-    <p>Contact : mitovosoaromeo@gmail.com | LinkedIn : linkedin.com/in/mitovosoa-romeo</p>
-    <p> WhatsApp : +261 34 16 588 36</p>
+    <h2>Contact</h2>
+    <p>Disponible pour missions freelances, collaborations ou expertises à distance.</p>
+    <p>Email : mitovosoa.romeo@gmail.com</p>
+  </div>
 
-  </footer>
+  <!-- SECTION ANGLAISE -->
+  <div id="en">
+    <h1>MITOVOSOA Roméo</h1>
+    <p>GIS & Environment Specialist | Geophysicist</p>
+
+    <h2>About Me</h2>
+    <p>
+      Passionate about Earth sciences, environment, and digital tools, I combine my expertise in geophysics, remote sensing, and GIS to deliver sustainable and innovative solutions.
+    </p>
+
+    <h2>Services</h2>
+    <ul>
+      <li>Spatial data analysis and visualization (QGIS, ArcGIS, Google Earth Engine)</li>
+      <li>Process automation with Python (extraction, processing, mapping, reporting)</li>
+      <li>Environmental assessments: impact studies, hydrological modeling (SWAT+)</li>
+      <li>Interactive mapping (Leaflet, Python Folium)</li>
+      <li>Creation of environmental monitoring dashboards</li>
+    </ul>
+
+    <h2>Recent Projects</h2>
+    <ul>
+      <li>Climate change impact simulation on the Upper Ikopa watershed</li>
+      <li>Monthly flow analysis for dams in Madagascar (Python + automated Excel)</li>
+      <li>Biodiversity mapping in the Androy region</li>
+    </ul>
+
+    <h2>Why Work With Me?</h2>
+    <ul>
+      <li>Strong scientific and technical background</li>
+      <li>Ability to turn complex data into clear and actionable results</li>
+      <li>Experience with multi-scale projects (local, regional, national)</li>
+      <li>Versatile, detail-oriented, and solution-driven</li>
+    </ul>
+
+    <h2>Contact</h2>
+    <p>Available for freelance projects, remote collaborations, or consulting missions.</p>
+    <p>Email: mitovosoaromeo@gmail.com</p>
+    <p>WhatsApp: +261341658836</p>
+  </div>
+
+  <script>
+    function switchLang(lang) {
+      document.getElementById('fr').style.display = (lang === 'fr') ? 'block' : 'none';
+      document.getElementById('en').style.display = (lang === 'en') ? 'block' : 'none';
+    }
+  </script>
+
 </body>
 </html>
